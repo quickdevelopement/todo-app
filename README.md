@@ -8,6 +8,7 @@ A Lightweight, Responsive **Todo Web Application** designed to help user organiz
 | 02    | v1.0.1  | Task Add  |
 | 03    | v1.0.2  | Todo List |
 | 04    | v1.0.3  | Delete Function |
+| 05    | v1.0.4  | Complete / Incomplete Toggle |
 
 
 ## Features

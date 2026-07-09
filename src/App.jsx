@@ -25,11 +25,24 @@ function App() {
     setTodos(updatedTodos);
   }
 
+  const handleToggle = id => {
+    const updatedTodos = todos.map((todo) => todo.id === id ? {
+      ...todo,
+      completed: !todo.completed,
+    } : todo)
+    setTodos(updatedTodos)
+  }
+
   return <div>
     <ul>
       {
         todos ? todos.map((todo) => (
-          <li className="" key={todo.id}>{todo.text} <button onClick={() => handleDelete(todo.id)}>Delete</button></li>
+          <li className="" key={todo.id}>
+            <span>{todo.text}</span>
+            <button onClick={() => handleToggle(todo.id)}>{todo.completed ? "Undo" : "Completed"}</button>
+            <button onClick={() => handleDelete(todo.id)}>Delete</button>
+
+          </li>
         )) : <h2>Loading.....</h2>
       }
     </ul>
