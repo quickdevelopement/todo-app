@@ -18,6 +18,14 @@ function App() {
     setTask("");
   }
 
-  return <div></div>
+  return <div>
+    <ul>
+      {
+        todos ? todos.map((todo) => (
+          <li className="" key={todo.id}>{todo.text}</li>
+        )) : <h2>Loading.....</h2>
+      }
+    </ul>
+  </div>
 }
 export default App;
