@@ -2,8 +2,13 @@
 A Lightweight, Responsive **Todo Web Application** designed to help user organize their daily schedules, manage project, and task productivity seamlessly.
 
 ## Version
-- [x] v1.0.0 [Todo State]
-- [x] v1.0.1 [Task Add]
+| SL No | Version | Step Task |
+|-------|---------|-----------|
+| 01    | v1.0.0  | Todo State|
+| 02    | v1.0.1  | Task Add  |
+| 03    | v1.0.2  | Todo List |
+| 04    | v1.0.3  | Delete Function |
+
 
 ## Features
 * **Task Management**: Create, read, update and delete tasks(CRUD)

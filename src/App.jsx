@@ -18,11 +18,18 @@ function App() {
     setTask("");
   }
 
+  const handleDelete = id => {
+    const updatedTodos = todos.filter(
+      todo => todo.id !== id
+    );
+    setTodos(updatedTodos);
+  }
+
   return <div>
     <ul>
       {
         todos ? todos.map((todo) => (
-          <li className="" key={todo.id}>{todo.text}</li>
+          <li className="" key={todo.id}>{todo.text} <button onClick={() => handleDelete(todo.id)}>Delete</button></li>
         )) : <h2>Loading.....</h2>
       }
     </ul>
